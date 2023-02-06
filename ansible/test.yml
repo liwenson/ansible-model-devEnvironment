@@ -1,0 +1,9 @@
+- hosts: localhost
+  vars: 
+    - base_url: "http://172.17.0.1:5000"
+    - api_username: "admin"
+    - api_password: "initial_password"
+  tasks:
+    - name: Include tasks from main.yml
+      include_tasks: tasks/main.yml
+        

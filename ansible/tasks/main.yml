@@ -1,0 +1,8 @@
+---
+# tasks file for empty-role
+- name: Add test user to API
+  our_api_module:
+    name: test1
+    state: present
+    email: test1@test.local
+    admin: False
